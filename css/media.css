@@ -1,0 +1,39 @@
+@media only screen and (max-width: 992px){
+
+    section.page{
+        height: 1000px;
+        background-repeat: repeat;
+    }
+    section.page .cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.page .img{
+        margin-left: 1%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section.page  .img__book{
+        height: 90%;
+        width: 90%;
+    }
+
+    section.page .text{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    section.page .text{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .text__bottom{
+        font-size: 24px;
+    }
+}
