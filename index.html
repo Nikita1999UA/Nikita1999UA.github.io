@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма для авторизации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js"></script>
+</head>
+<body>
+	 <div class="wrapper">
+		<div class="form">
+			<label title="Вкладка 1" class="tab " for="tab-1">Персональная информация</label>
+			<form  id="form-1" class="tab-form"  method="POST" name="personalInfo">
+				<fieldset>
+					<legend>Персональная информация</legend>
+					<div class="box-input">
+						<input class="input" type="text" name="name" required/>
+						<label for="name">Введите Имя</label>
+					</div>
+					<div class="box-input">
+						<input class="input" type="text" name="surname" required/>
+						<label for="surname">Введите Фамилию</label>
+					</div>
+					<div class="box-input">
+						<input type="number"  name="old" size="3" min="18" max="150" required/>
+						<label for="old">Сколько тебе лет?</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Регистрация</legend>
+					<div class="box-input">
+						<input class="input" type="email" name="email" required/>
+						<label for="email">Введите E-mail</label>
+					</div>
+					<div class="box-input">
+						<input class="input" type="password" name="pass" required />
+						<label for="pass">Введите пароль</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Ваш коментарий</legend>
+					<label for="comments">
+						<textarea name="comments" placeholder="Текст" rows="8"></textarea>
+					</label>
+				</fieldset>
+				
+				<a href="#" class="button">Отправить данные</a>
+				<ul class="social">
+					<li><a href=""><div><i class="fa fa-facebook"></i></div></a></li>
+					<li><a href=""><div><i class="fa fa-twitter"></i></div></a></li>
+					<li><a href=""><div><i class="fa fa-instagram"></i></div></a></li>
+					<li><a href=""><div><i class="fa fa-linkedin-square"></i></div></a></li>
+					<li><a href=""><div><i class="fa fa-youtube"></i> </div></a></li>
+				</ul>
+				<a href="#"></a>
+			</form>
+		</div> 	 
+	 </div>
+</body>
+</html>
