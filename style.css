@@ -1,0 +1,328 @@
+ /* -----  google Font  -----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Roboto, sans-serif;
+ background-image: url('fon.jpg');
+ -webkit-background-size: cover;
+ background-size: cover;
+ background-repeat: repeat;
+}
+
+
+.wrapper{
+    height: 100vh;
+    margin: 0 auto;
+	width: 300px;
+	max-width: 600px;
+    width: 100%;
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+fieldset{
+    border-color: #298cad;
+    border-style: solid;
+    padding: 15px;
+    margin-top: 20px
+}
+
+legend{
+    color: #298cad;
+}
+
+.form a {
+    text-decoration: none;
+    transition: .5s;
+    color: #298cad;
+}
+
+.form a:hover{
+    color: #36d2ff;
+}
+
+.form ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+form input{
+    display: block;
+    width: 100%;
+}
+
+form textarea{
+    display: block;
+    width: 100%;
+}
+
+
+
+.tab-form{
+    background-color: #fff;
+    padding: 30px 20px 20px;
+}
+
+
+label.tab{
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 15px;
+    display:block; 
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -1px; 
+    text-align: center;
+    z-index: 14;
+}
+
+label.tab{
+    background-color:#1e8da6;
+    color: #fff;
+}
+
+/*  Иконки по вкладкам */
+
+.tab::before{
+    content: '\f2b9';
+    font-family: "FontAwesome", sans-serif;
+    font-size: 24px;
+    margin-right: 11px;
+    font-weight: normal;
+}
+
+/* Формы */
+
+.input{
+    font-size: 16px;
+    border: 2px solid #e9eaea;
+    padding: 5px 14px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    color: #1e8da6;
+    outline: none;
+}
+
+::-webkit-input-placeholder {color: #c4c9c9;}
+::-moz-placeholder          {color: #298cad;}
+:-moz-placeholder           {color: #298cad;}
+:-ms-input-placeholder      {color: #298cad;}
+
+button{
+    background: #298cad;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    line-height: 46px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Линк */
+
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.social a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.social + a{
+    margin-top: 10px;
+    display:  block;
+    font-size: 12px;
+    text-align: center; 
+}
+
+.social li a::before,
+.social li a::after{
+    content: '';
+    position: absolute;
+    background: #2fbae1;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    transition: transform .5s;
+    transform: scaleX(0);
+}
+
+.social li a::before{
+    transform-origin: right; 
+}
+
+.social li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.social li a::after{
+    transform-origin: left;
+}
+
+.social li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+
+.social li a div::before,
+.social li a div::after{
+    content: '';
+    position: absolute;
+    background: #2fbae1;
+    width: 1px;
+    height: 100%;
+    transition: transform .5s;
+    transform: scaleY(0);
+}
+
+.social li a div::before{
+    left: 0;
+    transform-origin: bottom;
+}
+
+.social li a div::after{
+    right: 0;
+    transform-origin: top;
+}
+
+.social li a:hover div::before{
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.social li a:hover div::after{
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+
+
+
+/* Плавающий текст */
+
+
+.box-input{
+    position: relative;
+}
+
+.box-input input{
+    border: none;
+    border-bottom: 2px solid #e9eaea;
+    padding: 10px 0;
+}
+
+.box-input label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 6px;
+    color: #c4c9c9;
+    transition: .5s;pointer-events: none;
+}
+
+.box-input input:focus ~ label,
+.box-input input:valid ~ label{
+    top: -20px;
+    font-size: 12px;
+    color: #33d3fe;
+}
+
+/* Анимированный чекбокс */
+
+.recover{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+label[for='ckbox']{
+    cursor: pointer;
+    padding-left: 35px;
+    width: 260px;
+    display: block;
+    position: relative;
+}
+
+label[for='ckbox']::before{
+    content: '';
+    position: absolute;
+    border: 2px solid #c4c9c9;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+#ckbox:checked + label::before{
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #408CC2;
+    border-bottom: 2px solid #408cc2;
+    transform: rotate(40deg);
+    width: 12px;
+    height: 22px;
+    transform-origin: 100% 100%;
+    top: -4px;
+    left: -5px;
+}
+
+#ckbox:not(:checked),
+#ckbox:checked{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
