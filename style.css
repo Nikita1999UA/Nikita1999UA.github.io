@@ -56,8 +56,6 @@ legend{
 form input{
     display: block;
     width: 100%;
-    outline: none !important;
-    border: none !important;
 }
 
 form textarea{
@@ -117,7 +115,7 @@ label.tab{
 :-moz-placeholder           {color: #298cad;}
 :-ms-input-placeholder      {color: #298cad;}
 
-a.button{
+button{
     background: #298cad;
     color: #fff;
     font-size: 18px;
@@ -127,6 +125,7 @@ a.button{
     line-height: 46px;
     margin-top: 30px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 /* Линк */
@@ -237,7 +236,7 @@ a.button{
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 10px;
+    padding-top: 6px;
     color: #c4c9c9;
     transition: .5s;pointer-events: none;
 }
