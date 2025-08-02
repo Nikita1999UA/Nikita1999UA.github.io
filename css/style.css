@@ -102,6 +102,9 @@ a {
 .site-section {
   padding: 3em 0; }
   @media (min-width: 768px) {
+    .site-blocks-cover.overlay {
+    background-size: contain !important;
+     }
     .site-section {
       padding: 7em 0; } }
   .site-section.site-section-sm {
